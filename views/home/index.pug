@@ -1,0 +1,15 @@
+//- layout
+extends ../layouts/default
+
+block title
+	title Snake
+
+block content
+	div(ng-controller="SnakeCtrl as snake")
+		canvas#board(style="border:1px solid black")
+
+block additional_js
+	script(type="text/javascript" src="/js/snake/board.js")
+	script(type="text/javascript" src="/js/snake/snake.js")
+	script(type="text/javascript" src="/js/input.js")
+	script(type="text/javascript" src="/js/snakeCtrl.js")

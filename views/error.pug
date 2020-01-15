@@ -1,0 +1,9 @@
+//- layout
+extends ./layouts/default
+
+block title
+	title Erreur #{error}
+
+block content
+	.container.error-page
+		span.msg #{msg}

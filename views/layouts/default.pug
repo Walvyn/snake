@@ -1,0 +1,25 @@
+doctype html
+html(lang="fr")
+	head
+		meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+		meta(name="viewport" content="width=device-width,user-scalable=no,height=device-height,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0")
+
+		block title
+			title Accueil
+
+		link(rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon")
+		link(rel="icon" href="/img/favicon.ico" type="image/x-icon")
+		link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+
+		block additional_css
+
+	body
+		include ../includes/header
+
+		#content(ng-app="GameApp")
+			block content
+
+		script(type="text/javascript" src="/js/libraries/jquery.js")
+		script(type="text/javascript" src="/js/libraries/angular.min.js")
+		script(type="text/javascript" src="/js/global.js")
+		block additional_js
